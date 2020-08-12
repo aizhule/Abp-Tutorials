@@ -4,7 +4,7 @@ Based on the [official document](https://docs.abp.io/zh-Hans/abp/latest/Multi-Te
 
 1、Tenant login:
 
-Based on the identityserver4 authorization center implemented by abp, the current tenant id must be specified when multi-tenant login, so that the current tenant id is included in the token.
+Based on the Identity Server 4 authorization center implemented by ABP, the current tenant id must be specified when multi-tenant login, so that the current tenant id is included in the token.
 
 > Add the request header to the login interface: __tenant: "tenant id"
 
@@ -14,9 +14,9 @@ Based on the identityserver4 authorization center implemented by abp, the curren
 
 Generally speaking, directly enable multi-tenancy:
 
->  `MultiTenancyConsts.IsEnabla = true`
+>  `MultiTenancyConsts.IsEnabled = true`
 
-but when you are a multi-database multi-tenant, you need to configure tenant storage, otherwise it will throw *`not found tenant store`* exception.
+but when you have a multi-tenant multi database, you need to configure tenant storage, otherwise it will throw *`not found tenant store`* exception.
 
 **Specific steps:**
 
